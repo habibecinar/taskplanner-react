@@ -2,7 +2,7 @@
 // Görev listesi burada tutulur.
 
 import { configureStore } from "@reduxjs/toolkit";
-import {tasksReducer} from "../features/features/tasks/taskSlice";
+import tasksReducer from "../features/features/tasks/taskSlice";
 
 
 export const store = configureStore({
@@ -10,3 +10,4 @@ export const store = configureStore({
     tasks: tasksReducer,
   },
 });
+export default store;
